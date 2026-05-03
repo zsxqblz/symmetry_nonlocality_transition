@@ -1,4 +1,4 @@
-# Public Repo Layout
+# Symmetry Breaking and Nonlocality Phase Transitions
 
 This directory contains code and plot data accompying "Concurrence of Symmetry Breaking and Nonlocality Phase Transitions in Diffusion Models". The file structure is organized as follows.
 
