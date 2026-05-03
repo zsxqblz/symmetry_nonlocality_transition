@@ -1,0 +1,133 @@
+{
+  "config": {
+    "model_id": "stabilityai/stable-diffusion-3-medium-diffusers",
+    "radius": 8,
+    "local_intervals": [
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "sampling_steps": 2,
+    "num_samples": 1,
+    "seed": 123,
+    "guidance_scale": 4.0,
+    "prompt": "a golden retriever playing in a park, high detail, soft lighting",
+    "output_dir": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/score_gap_outputs_sd3_sampling_only_golden_retriever_masked_sdpa/local_smoke_r8",
+    "local_files_only": true,
+    "local_attn_impl": "masked_sdpa"
+  },
+  "token_grid": [
+    64,
+    64
+  ],
+  "trajectory_type": "sampling_only_global_evolution",
+  "results": {
+    "sample": [
+      {
+        "sample_index": 0,
+        "t_index": 0,
+        "t": 1000.0,
+        "t_norm": 1.0,
+        "mse_local_vs_global_cond": 0.25043821334838867,
+        "mse_local_vs_global_uncond": 0.10825017094612122,
+        "conditioning_gap_global": 0.5462102890014648,
+        "conditioning_gap_local": 0.44694817066192627
+      },
+      {
+        "sample_index": 0,
+        "t_index": 1,
+        "t": 8.928571701049805,
+        "t_norm": 0.0,
+        "mse_local_vs_global_cond": 0.11315853148698807,
+        "mse_local_vs_global_uncond": 0.10074059665203094,
+        "conditioning_gap_global": 0.014830105006694794,
+        "conditioning_gap_local": 0.027451233938336372
+      }
+    ]
+  },
+  "per_timestep": {
+    "mse_local_vs_global_cond": {
+      "0": {
+        "mean": 0.25043821334838867,
+        "std": 0.0,
+        "max": 0.25043821334838867,
+        "count": 1
+      },
+      "1": {
+        "mean": 0.11315853148698807,
+        "std": 0.0,
+        "max": 0.11315853148698807,
+        "count": 1
+      }
+    },
+    "mse_local_vs_global_uncond": {
+      "0": {
+        "mean": 0.10825017094612122,
+        "std": 0.0,
+        "max": 0.10825017094612122,
+        "count": 1
+      },
+      "1": {
+        "mean": 0.10074059665203094,
+        "std": 0.0,
+        "max": 0.10074059665203094,
+        "count": 1
+      }
+    },
+    "conditioning_gap_global": {
+      "0": {
+        "mean": 0.5462102890014648,
+        "std": 0.0,
+        "max": 0.5462102890014648,
+        "count": 1
+      },
+      "1": {
+        "mean": 0.014830105006694794,
+        "std": 0.0,
+        "max": 0.014830105006694794,
+        "count": 1
+      }
+    },
+    "conditioning_gap_local": {
+      "0": {
+        "mean": 0.44694817066192627,
+        "std": 0.0,
+        "max": 0.44694817066192627,
+        "count": 1
+      },
+      "1": {
+        "mean": 0.027451233938336372,
+        "std": 0.0,
+        "max": 0.027451233938336372,
+        "count": 1
+      }
+    }
+  },
+  "summary": {
+    "mse_local_vs_global_cond": {
+      "mean": 0.18179837241768837,
+      "std": 0.09707139396332826,
+      "max": 0.25043821334838867,
+      "count": 2
+    },
+    "mse_local_vs_global_uncond": {
+      "mean": 0.10449538379907608,
+      "std": 0.005310070907175411,
+      "max": 0.10825017094612122,
+      "count": 2
+    },
+    "conditioning_gap_global": {
+      "mean": 0.2805201970040798,
+      "std": 0.37574253149085723,
+      "max": 0.5462102890014648,
+      "count": 2
+    },
+    "conditioning_gap_local": {
+      "mean": 0.23719970230013132,
+      "std": 0.29662912864423446,
+      "max": 0.44694817066192627,
+      "count": 2
+    }
+  }
+}

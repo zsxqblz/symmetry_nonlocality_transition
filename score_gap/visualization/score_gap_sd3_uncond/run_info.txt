@@ -1,0 +1,13 @@
+root=score_gap/data/score_gap_sd3_uncond
+metrics_name=sd3_sampling_score_gap_metrics.json
+available_radii=2,4,6,8,10,12,14,16
+r1_to_r8_step1:available=2,4,6,8
+r1_to_r8_step1:missing=1,3,5,7
+r1_to_r8_step1:plain:no error band
+r1_to_r8_step1:trajstd:trajectory std
+r1_to_r8_step1:sem:SEM
+r2_to_r16_step2:available=2,4,6,8,10,12,14,16
+r2_to_r16_step2:missing=none
+r2_to_r16_step2:plain:no error band
+r2_to_r16_step2:trajstd:trajectory std
+r2_to_r16_step2:sem:SEM

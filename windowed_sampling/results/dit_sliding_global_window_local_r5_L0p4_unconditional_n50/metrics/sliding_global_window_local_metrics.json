@@ -1,0 +1,4234 @@
+{
+  "config": {
+    "experiment": "sliding_global_window_local",
+    "model_id": "facebook/DiT-XL-2-256",
+    "class_id": 207,
+    "guidance": 4.0,
+    "steps": 40,
+    "radius": 5,
+    "window_length": 0.4,
+    "outside_conditioning": "unconditional",
+    "num_samples": 50,
+    "base_seed": 123,
+    "sample_seeds": [
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172
+    ],
+    "schedule_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "classifier_model_id": "microsoft/resnet-50",
+    "classifier_device": "cpu",
+    "fid_device": "cpu",
+    "fid_batch_size": 16,
+    "local_files_only": true,
+    "save_all_images": true
+  },
+  "baseline": {
+    "name": "global_conditioned",
+    "num_samples": 50,
+    "correct_count": 50,
+    "error_rate": 0.0,
+    "example_path": "baseline_global_conditioned/baseline_global_conditioned_example.png"
+  },
+  "summary": [
+    {
+      "schedule_index": 0,
+      "interval_start": 0.0,
+      "interval_end": 0.4,
+      "num_samples": 50,
+      "correct_count": 17,
+      "error_rate": 0.6599999999999999,
+      "fid_to_global_conditioned": 310.2589111328125
+    },
+    {
+      "schedule_index": 1,
+      "interval_start": 0.1,
+      "interval_end": 0.5,
+      "num_samples": 50,
+      "correct_count": 31,
+      "error_rate": 0.38,
+      "fid_to_global_conditioned": 175.16944885253906
+    },
+    {
+      "schedule_index": 2,
+      "interval_start": 0.2,
+      "interval_end": 0.6,
+      "num_samples": 50,
+      "correct_count": 40,
+      "error_rate": 0.19999999999999996,
+      "fid_to_global_conditioned": 139.8702392578125
+    },
+    {
+      "schedule_index": 3,
+      "interval_start": 0.3,
+      "interval_end": 0.7,
+      "num_samples": 50,
+      "correct_count": 27,
+      "error_rate": 0.45999999999999996,
+      "fid_to_global_conditioned": 168.03009033203125
+    },
+    {
+      "schedule_index": 4,
+      "interval_start": 0.4,
+      "interval_end": 0.8,
+      "num_samples": 50,
+      "correct_count": 18,
+      "error_rate": 0.64,
+      "fid_to_global_conditioned": 226.64273071289062
+    },
+    {
+      "schedule_index": 5,
+      "interval_start": 0.5,
+      "interval_end": 0.9,
+      "num_samples": 50,
+      "correct_count": 6,
+      "error_rate": 0.88,
+      "fid_to_global_conditioned": 319.58282470703125
+    },
+    {
+      "schedule_index": 6,
+      "interval_start": 0.6,
+      "interval_end": 1.0,
+      "num_samples": 50,
+      "correct_count": 0,
+      "error_rate": 1.0,
+      "fid_to_global_conditioned": 367.3614807128906
+    },
+    {
+      "schedule_index": 7,
+      "interval_start": 0.7,
+      "interval_end": 1.0,
+      "num_samples": 50,
+      "correct_count": 0,
+      "error_rate": 1.0,
+      "fid_to_global_conditioned": 354.2794494628906
+    }
+  ],
+  "predictions": {
+    "baseline_global_conditioned": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/baseline_global_conditioned/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_00": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 168,
+        "pred_label": "redbone",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 181,
+        "pred_label": "Bedlington terrier",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 222,
+        "pred_label": "kuvasz",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 806,
+        "pred_label": "sock",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 237,
+        "pred_label": "miniature pinscher",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 230,
+        "pred_label": "Shetland sheepdog, Shetland sheep dog, Shetland",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 613,
+        "pred_label": "joystick",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 296,
+        "pred_label": "ice bear, polar bear, Ursus Maritimus, Thalarctos maritimus",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 412,
+        "pred_label": "ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 355,
+        "pred_label": "llama",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 941,
+        "pred_label": "acorn squash",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 696,
+        "pred_label": "paintbrush",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 376,
+        "pred_label": "proboscis monkey, Nasalis larvatus",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 971,
+        "pred_label": "bubble",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 494,
+        "pred_label": "chime, bell, gong",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 176,
+        "pred_label": "Saluki, gazelle hound",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 159,
+        "pred_label": "Rhodesian ridgeback",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 213,
+        "pred_label": "Irish setter, red setter",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 943,
+        "pred_label": "cucumber, cuke",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 255,
+        "pred_label": "Leonberg",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 789,
+        "pred_label": "shoji",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 929,
+        "pred_label": "ice lolly, lolly, lollipop, popsicle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 213,
+        "pred_label": "Irish setter, red setter",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 916,
+        "pred_label": "web site, website, internet site, site",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 747,
+        "pred_label": "punching bag, punch bag, punching ball, punchball",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 626,
+        "pred_label": "lighter, light, igniter, ignitor",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 590,
+        "pred_label": "hand-held computer, hand-held microcomputer",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 644,
+        "pred_label": "matchstick",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 195,
+        "pred_label": "Boston bull, Boston terrier",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 743,
+        "pred_label": "prison, prison house",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 575,
+        "pred_label": "golfcart, golf cart",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 253,
+        "pred_label": "basenji",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_00/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_01": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 257,
+        "pred_label": "Great Pyrenees",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 176,
+        "pred_label": "Saluki, gazelle hound",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 796,
+        "pred_label": "ski mask",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 153,
+        "pred_label": "Maltese dog, Maltese terrier, Maltese",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 222,
+        "pred_label": "kuvasz",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 215,
+        "pred_label": "Brittany spaniel",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 151,
+        "pred_label": "Chihuahua",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 211,
+        "pred_label": "vizsla, Hungarian pointer",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 215,
+        "pred_label": "Brittany spaniel",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 310,
+        "pred_label": "ant, emmet, pismire",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 585,
+        "pred_label": "hair spray",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 626,
+        "pred_label": "lighter, light, igniter, ignitor",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 277,
+        "pred_label": "red fox, Vulpes vulpes",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 641,
+        "pred_label": "maraca",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 232,
+        "pred_label": "Border collie",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_01/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_02": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 162,
+        "pred_label": "beagle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 219,
+        "pred_label": "cocker spaniel, English cocker spaniel, cocker",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 309,
+        "pred_label": "bee",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 148,
+        "pred_label": "killer whale, killer, orca, grampus, sea wolf, Orcinus orca",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 908,
+        "pred_label": "wing",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 227,
+        "pred_label": "kelpie",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 570,
+        "pred_label": "gasmask, respirator, gas helmet",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 176,
+        "pred_label": "Saluki, gazelle hound",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_02/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_03": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 855,
+        "pred_label": "thimble",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 676,
+        "pred_label": "muzzle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 215,
+        "pred_label": "Brittany spaniel",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 631,
+        "pred_label": "lotion",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 615,
+        "pred_label": "knee pad",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 257,
+        "pred_label": "Great Pyrenees",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 355,
+        "pred_label": "llama",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 376,
+        "pred_label": "proboscis monkey, Nasalis larvatus",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 168,
+        "pred_label": "redbone",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 865,
+        "pred_label": "toyshop",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 151,
+        "pred_label": "Chihuahua",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 259,
+        "pred_label": "Pomeranian",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 154,
+        "pred_label": "Pekinese, Pekingese, Peke",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 496,
+        "pred_label": "Christmas stocking",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 222,
+        "pred_label": "kuvasz",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 841,
+        "pred_label": "sweatshirt",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 808,
+        "pred_label": "sombrero",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 257,
+        "pred_label": "Great Pyrenees",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_03/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_04": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 910,
+        "pred_label": "wooden spoon",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 162,
+        "pred_label": "beagle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 51,
+        "pred_label": "triceratops",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 806,
+        "pred_label": "sock",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 585,
+        "pred_label": "hair spray",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 585,
+        "pred_label": "hair spray",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 258,
+        "pred_label": "Samoyed, Samoyede",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 699,
+        "pred_label": "panpipe, pandean pipe, syrinx",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 862,
+        "pred_label": "torch",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 865,
+        "pred_label": "toyshop",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 684,
+        "pred_label": "ocarina, sweet potato",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 231,
+        "pred_label": "collie",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 263,
+        "pred_label": "Pembroke, Pembroke Welsh corgi",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 448,
+        "pred_label": "birdhouse",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 806,
+        "pred_label": "sock",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 180,
+        "pred_label": "American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 267,
+        "pred_label": "standard poodle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 167,
+        "pred_label": "English foxhound",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 650,
+        "pred_label": "microphone, mike",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 773,
+        "pred_label": "saltshaker, salt shaker",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 893,
+        "pred_label": "wallet, billfold, notecase, pocketbook",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 512,
+        "pred_label": "corkscrew, bottle screw",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 643,
+        "pred_label": "mask",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 162,
+        "pred_label": "beagle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 846,
+        "pred_label": "table lamp",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 723,
+        "pred_label": "pinwheel",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_04/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_05": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 872,
+        "pred_label": "tripod",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 762,
+        "pred_label": "restaurant, eating house, eating place, eatery",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 51,
+        "pred_label": "triceratops",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 842,
+        "pred_label": "swimming trunks, bathing trunks",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 176,
+        "pred_label": "Saluki, gazelle hound",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 720,
+        "pred_label": "pill bottle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 398,
+        "pred_label": "abacus",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 907,
+        "pred_label": "wine bottle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 655,
+        "pred_label": "miniskirt, mini",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 643,
+        "pred_label": "mask",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 855,
+        "pred_label": "thimble",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 406,
+        "pred_label": "altar",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 902,
+        "pred_label": "whistle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 238,
+        "pred_label": "Greater Swiss Mountain dog",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 917,
+        "pred_label": "comic book",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 692,
+        "pred_label": "packet",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 939,
+        "pred_label": "zucchini, courgette",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 498,
+        "pred_label": "cinema, movie theater, movie theatre, movie house, picture palace",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 579,
+        "pred_label": "grand piano, grand",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 193,
+        "pred_label": "Australian terrier",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 806,
+        "pred_label": "sock",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 419,
+        "pred_label": "Band Aid",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 889,
+        "pred_label": "violin, fiddle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 903,
+        "pred_label": "wig",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 180,
+        "pred_label": "American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 916,
+        "pred_label": "web site, website, internet site, site",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 664,
+        "pred_label": "monitor",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 398,
+        "pred_label": "abacus",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 650,
+        "pred_label": "microphone, mike",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 181,
+        "pred_label": "Bedlington terrier",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 855,
+        "pred_label": "thimble",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 407,
+        "pred_label": "ambulance",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 684,
+        "pred_label": "ocarina, sweet potato",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 585,
+        "pred_label": "hair spray",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 737,
+        "pred_label": "pop bottle, soda bottle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 162,
+        "pred_label": "beagle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 692,
+        "pred_label": "packet",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 545,
+        "pred_label": "electric fan, blower",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 207,
+        "pred_label": "golden retriever",
+        "target_class": 207,
+        "correct": 1,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_05/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_06": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 747,
+        "pred_label": "punching bag, punch bag, punching ball, punchball",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 402,
+        "pred_label": "acoustic guitar",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 457,
+        "pred_label": "bow tie, bow-tie, bowtie",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 955,
+        "pred_label": "jackfruit, jak, jack",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 620,
+        "pred_label": "laptop, laptop computer",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 862,
+        "pred_label": "torch",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 585,
+        "pred_label": "hair spray",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 629,
+        "pred_label": "lipstick, lip rouge",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 464,
+        "pred_label": "buckle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 509,
+        "pred_label": "confectionery, confectionary, candy store",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 846,
+        "pred_label": "table lamp",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 585,
+        "pred_label": "hair spray",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 785,
+        "pred_label": "seat belt, seatbelt",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 696,
+        "pred_label": "paintbrush",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 263,
+        "pred_label": "Pembroke, Pembroke Welsh corgi",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 1,
+        "pred_label": "goldfish, Carassius auratus",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 497,
+        "pred_label": "church, church building",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 418,
+        "pred_label": "ballpoint, ballpoint pen, ballpen, Biro",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 710,
+        "pred_label": "pencil sharpener",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 838,
+        "pred_label": "sunscreen, sunblock, sun blocker",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 462,
+        "pred_label": "broom",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 626,
+        "pred_label": "lighter, light, igniter, ignitor",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 468,
+        "pred_label": "cab, hack, taxi, taxicab",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 579,
+        "pred_label": "grand piano, grand",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 629,
+        "pred_label": "lipstick, lip rouge",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 208,
+        "pred_label": "Labrador retriever",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 905,
+        "pred_label": "window shade",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 433,
+        "pred_label": "bathing cap, swimming cap",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 441,
+        "pred_label": "beer glass",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 441,
+        "pred_label": "beer glass",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 604,
+        "pred_label": "hourglass",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 732,
+        "pred_label": "Polaroid camera, Polaroid Land camera",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 987,
+        "pred_label": "corn",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 916,
+        "pred_label": "web site, website, internet site, site",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 811,
+        "pred_label": "space heater",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 650,
+        "pred_label": "microphone, mike",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 662,
+        "pred_label": "modem",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 925,
+        "pred_label": "consomme",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 727,
+        "pred_label": "planetarium",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 714,
+        "pred_label": "pick, plectrum, plectron",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 709,
+        "pred_label": "pencil box, pencil case",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 446,
+        "pred_label": "binder, ring-binder",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 846,
+        "pred_label": "table lamp",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 789,
+        "pred_label": "shoji",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 722,
+        "pred_label": "ping-pong ball",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 789,
+        "pred_label": "shoji",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 629,
+        "pred_label": "lipstick, lip rouge",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_06/sample_0049_seed_172.png"
+      }
+    ],
+    "schedule_07": [
+      {
+        "sample_index": 0,
+        "seed": 123,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0000_seed_123.png"
+      },
+      {
+        "sample_index": 1,
+        "seed": 124,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0001_seed_124.png"
+      },
+      {
+        "sample_index": 2,
+        "seed": 125,
+        "pred_class": 418,
+        "pred_label": "ballpoint, ballpoint pen, ballpen, Biro",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0002_seed_125.png"
+      },
+      {
+        "sample_index": 3,
+        "seed": 126,
+        "pred_class": 969,
+        "pred_label": "eggnog",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0003_seed_126.png"
+      },
+      {
+        "sample_index": 4,
+        "seed": 127,
+        "pred_class": 737,
+        "pred_label": "pop bottle, soda bottle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0004_seed_127.png"
+      },
+      {
+        "sample_index": 5,
+        "seed": 128,
+        "pred_class": 47,
+        "pred_label": "African chameleon, Chamaeleo chamaeleon",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0005_seed_128.png"
+      },
+      {
+        "sample_index": 6,
+        "seed": 129,
+        "pred_class": 791,
+        "pred_label": "shopping cart",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0006_seed_129.png"
+      },
+      {
+        "sample_index": 7,
+        "seed": 130,
+        "pred_class": 769,
+        "pred_label": "rule, ruler",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0007_seed_130.png"
+      },
+      {
+        "sample_index": 8,
+        "seed": 131,
+        "pred_class": 401,
+        "pred_label": "accordion, piano accordion, squeeze box",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0008_seed_131.png"
+      },
+      {
+        "sample_index": 9,
+        "seed": 132,
+        "pred_class": 893,
+        "pred_label": "wallet, billfold, notecase, pocketbook",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0009_seed_132.png"
+      },
+      {
+        "sample_index": 10,
+        "seed": 133,
+        "pred_class": 722,
+        "pred_label": "ping-pong ball",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0010_seed_133.png"
+      },
+      {
+        "sample_index": 11,
+        "seed": 134,
+        "pred_class": 629,
+        "pred_label": "lipstick, lip rouge",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0011_seed_134.png"
+      },
+      {
+        "sample_index": 12,
+        "seed": 135,
+        "pred_class": 709,
+        "pred_label": "pencil box, pencil case",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0012_seed_135.png"
+      },
+      {
+        "sample_index": 13,
+        "seed": 136,
+        "pred_class": 954,
+        "pred_label": "banana",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0013_seed_136.png"
+      },
+      {
+        "sample_index": 14,
+        "seed": 137,
+        "pred_class": 604,
+        "pred_label": "hourglass",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0014_seed_137.png"
+      },
+      {
+        "sample_index": 15,
+        "seed": 138,
+        "pred_class": 572,
+        "pred_label": "goblet",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0015_seed_138.png"
+      },
+      {
+        "sample_index": 16,
+        "seed": 139,
+        "pred_class": 687,
+        "pred_label": "organ, pipe organ",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0016_seed_139.png"
+      },
+      {
+        "sample_index": 17,
+        "seed": 140,
+        "pred_class": 714,
+        "pred_label": "pick, plectrum, plectron",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0017_seed_140.png"
+      },
+      {
+        "sample_index": 18,
+        "seed": 141,
+        "pred_class": 530,
+        "pred_label": "digital clock",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0018_seed_141.png"
+      },
+      {
+        "sample_index": 19,
+        "seed": 142,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0019_seed_142.png"
+      },
+      {
+        "sample_index": 20,
+        "seed": 143,
+        "pred_class": 917,
+        "pred_label": "comic book",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0020_seed_143.png"
+      },
+      {
+        "sample_index": 21,
+        "seed": 144,
+        "pred_class": 969,
+        "pred_label": "eggnog",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0021_seed_144.png"
+      },
+      {
+        "sample_index": 22,
+        "seed": 145,
+        "pred_class": 898,
+        "pred_label": "water bottle",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0022_seed_145.png"
+      },
+      {
+        "sample_index": 23,
+        "seed": 146,
+        "pred_class": 736,
+        "pred_label": "pool table, billiard table, snooker table",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0023_seed_146.png"
+      },
+      {
+        "sample_index": 24,
+        "seed": 147,
+        "pred_class": 854,
+        "pred_label": "theater curtain, theatre curtain",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0024_seed_147.png"
+      },
+      {
+        "sample_index": 25,
+        "seed": 148,
+        "pred_class": 453,
+        "pred_label": "bookcase",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0025_seed_148.png"
+      },
+      {
+        "sample_index": 26,
+        "seed": 149,
+        "pred_class": 800,
+        "pred_label": "slot, one-armed bandit",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0026_seed_149.png"
+      },
+      {
+        "sample_index": 27,
+        "seed": 150,
+        "pred_class": 709,
+        "pred_label": "pencil box, pencil case",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0027_seed_150.png"
+      },
+      {
+        "sample_index": 28,
+        "seed": 151,
+        "pred_class": 476,
+        "pred_label": "carousel, carrousel, merry-go-round, roundabout, whirligig",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0028_seed_151.png"
+      },
+      {
+        "sample_index": 29,
+        "seed": 152,
+        "pred_class": 546,
+        "pred_label": "electric guitar",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0029_seed_152.png"
+      },
+      {
+        "sample_index": 30,
+        "seed": 153,
+        "pred_class": 686,
+        "pred_label": "oil filter",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0030_seed_153.png"
+      },
+      {
+        "sample_index": 31,
+        "seed": 154,
+        "pred_class": 846,
+        "pred_label": "table lamp",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0031_seed_154.png"
+      },
+      {
+        "sample_index": 32,
+        "seed": 155,
+        "pred_class": 769,
+        "pred_label": "rule, ruler",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0032_seed_155.png"
+      },
+      {
+        "sample_index": 33,
+        "seed": 156,
+        "pred_class": 916,
+        "pred_label": "web site, website, internet site, site",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0033_seed_156.png"
+      },
+      {
+        "sample_index": 34,
+        "seed": 157,
+        "pred_class": 904,
+        "pred_label": "window screen",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0034_seed_157.png"
+      },
+      {
+        "sample_index": 35,
+        "seed": 158,
+        "pred_class": 916,
+        "pred_label": "web site, website, internet site, site",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0035_seed_158.png"
+      },
+      {
+        "sample_index": 36,
+        "seed": 159,
+        "pred_class": 598,
+        "pred_label": "home theater, home theatre",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0036_seed_159.png"
+      },
+      {
+        "sample_index": 37,
+        "seed": 160,
+        "pred_class": 723,
+        "pred_label": "pinwheel",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0037_seed_160.png"
+      },
+      {
+        "sample_index": 38,
+        "seed": 161,
+        "pred_class": 629,
+        "pred_label": "lipstick, lip rouge",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0038_seed_161.png"
+      },
+      {
+        "sample_index": 39,
+        "seed": 162,
+        "pred_class": 593,
+        "pred_label": "harmonica, mouth organ, harp, mouth harp",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0039_seed_162.png"
+      },
+      {
+        "sample_index": 40,
+        "seed": 163,
+        "pred_class": 818,
+        "pred_label": "spotlight, spot",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0040_seed_163.png"
+      },
+      {
+        "sample_index": 41,
+        "seed": 164,
+        "pred_class": 917,
+        "pred_label": "comic book",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0041_seed_164.png"
+      },
+      {
+        "sample_index": 42,
+        "seed": 165,
+        "pred_class": 877,
+        "pred_label": "turnstile",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0042_seed_165.png"
+      },
+      {
+        "sample_index": 43,
+        "seed": 166,
+        "pred_class": 631,
+        "pred_label": "lotion",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0043_seed_166.png"
+      },
+      {
+        "sample_index": 44,
+        "seed": 167,
+        "pred_class": 743,
+        "pred_label": "prison, prison house",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0044_seed_167.png"
+      },
+      {
+        "sample_index": 45,
+        "seed": 168,
+        "pred_class": 723,
+        "pred_label": "pinwheel",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0045_seed_168.png"
+      },
+      {
+        "sample_index": 46,
+        "seed": 169,
+        "pred_class": 857,
+        "pred_label": "throne",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0046_seed_169.png"
+      },
+      {
+        "sample_index": 47,
+        "seed": 170,
+        "pred_class": 765,
+        "pred_label": "rocking chair, rocker",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0047_seed_170.png"
+      },
+      {
+        "sample_index": 48,
+        "seed": 171,
+        "pred_class": 789,
+        "pred_label": "shoji",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0048_seed_171.png"
+      },
+      {
+        "sample_index": 49,
+        "seed": 172,
+        "pred_class": 629,
+        "pred_label": "lipstick, lip rouge",
+        "target_class": 207,
+        "correct": 0,
+        "image_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_r5_L0p4_unconditional_n50/samples/schedule_07/sample_0049_seed_172.png"
+      }
+    ]
+  },
+  "elapsed_seconds": 2134.38507437706
+}
