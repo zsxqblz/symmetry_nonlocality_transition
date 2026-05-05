@@ -30,3 +30,4 @@ python -m windowed_sampling.replot_paper_plots_with_error_bars
 python -m windowed_sampling.replot_masked_sdpa_radius_aggregate
 python -m windowed_sampling.replot_sd3_masked_sdpa_radius_aggregate
 ```
+We use python 3.12.9 for all experiments.
