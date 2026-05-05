@@ -5,7 +5,7 @@
     "local_intervals": "[[0.0, 1.0]]",
     "num_samples": 10,
     "dataset_dir": "/scratch/gpfs/DATASETS/imagenet/ilsvrc_2012_classification_localization",
-    "output_dir": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/score_gap_outputs_masked_sdpa_cond/r2",
+    "output_dir": "score_gap_outputs_masked_sdpa_cond/r2",
     "sampling_steps": 100,
     "train_steps": 100,
     "max_train_t": 1000,

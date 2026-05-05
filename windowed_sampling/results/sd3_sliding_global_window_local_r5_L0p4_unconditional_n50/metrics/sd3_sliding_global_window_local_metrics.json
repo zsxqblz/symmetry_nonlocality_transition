@@ -189,7 +189,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -198,7 +198,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -207,7 +207,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -216,7 +216,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/baseline_global_conditioned_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -641,7 +641,7 @@
         "pred_label": "slot, one-armed bandit",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -650,7 +650,7 @@
         "pred_label": "fountain",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -659,7 +659,7 @@
         "pred_label": "cinema, movie theater, movie theatre, movie house, picture palace",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -668,7 +668,7 @@
         "pred_label": "cinema, movie theater, movie theatre, movie house, picture palace",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_00_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -1093,7 +1093,7 @@
         "pred_label": "slot, one-armed bandit",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -1102,7 +1102,7 @@
         "pred_label": "fountain",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -1111,7 +1111,7 @@
         "pred_label": "cinema, movie theater, movie theatre, movie house, picture palace",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -1120,7 +1120,7 @@
         "pred_label": "wardrobe, closet, press",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_01_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -1545,7 +1545,7 @@
         "pred_label": "slot, one-armed bandit",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -1554,7 +1554,7 @@
         "pred_label": "fountain",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -1563,7 +1563,7 @@
         "pred_label": "pinwheel",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -1572,7 +1572,7 @@
         "pred_label": "cinema, movie theater, movie theatre, movie house, picture palace",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_02_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -1997,7 +1997,7 @@
         "pred_label": "grand piano, grand",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -2006,7 +2006,7 @@
         "pred_label": "fountain",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -2015,7 +2015,7 @@
         "pred_label": "umbrella",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -2024,7 +2024,7 @@
         "pred_label": "cinema, movie theater, movie theatre, movie house, picture palace",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_03_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -2449,7 +2449,7 @@
         "pred_label": "Pomeranian",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -2458,7 +2458,7 @@
         "pred_label": "fountain",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -2467,7 +2467,7 @@
         "pred_label": "goldfish, Carassius auratus",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -2476,7 +2476,7 @@
         "pred_label": "desk",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_04_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -2901,7 +2901,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -2910,7 +2910,7 @@
         "pred_label": "Pembroke, Pembroke Welsh corgi",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -2919,7 +2919,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -2928,7 +2928,7 @@
         "pred_label": "traffic light, traffic signal, stoplight",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_05_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -3353,7 +3353,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -3362,7 +3362,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -3371,7 +3371,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -3380,7 +3380,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_06_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -3805,7 +3805,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_000_seed_123.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -3814,7 +3814,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_001_seed_124.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -3823,7 +3823,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_002_seed_125.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -3832,7 +3832,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_003_seed_126.png"
+        "example_path": "results/sd3_sliding_global_window_local_r5_L0p4_unconditional_n50/examples/schedule_07_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,

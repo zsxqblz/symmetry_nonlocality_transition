@@ -11,6 +11,7 @@ Bundled benchmark result roots live under `results/` and include:
 - `sd3_sliding_global_window_local_r5_L0p4_unconditional_n50`
 - `dit_sliding_global_window_local_masked_sdpa_r*_L0p4_unconditional_n500`
 - `sd3_sliding_global_window_local_masked_sdpa_r*_L0p4_unconditional_n500`
+- `sd3_sliding_global_window_local_masked_sdpa_r*_L0p4_unconditional_n62`
 
 Bundled paper figures live under `paper_plots/`.
 
@@ -29,7 +30,8 @@ Bundled paper figures live under `paper_plots/`.
    - uncertainty JSON outputs
 4. Regenerate figures:
    - use `replot_paper_plots_with_error_bars.py` for the main paper figure families
-   - use `replot_masked_sdpa_radius_aggregate.py` for the masked-SDPA radius aggregate
+   - use `replot_masked_sdpa_radius_aggregate.py` for the DiT masked-SDPA radius aggregate
+   - use `replot_sd3_masked_sdpa_radius_aggregate.py` for the SD3 masked-SDPA radius aggregate
    - use `replot_conditioning_window_paper_benchmarks.py` when you want one figure family from one summary CSV
 
 ## Benchmark runners
@@ -213,4 +215,23 @@ Outputs:
 Exact command:
 ```bash
 conda run -n arena-env python -m windowed_sampling.replot_masked_sdpa_radius_aggregate
+```
+
+### `replot_sd3_masked_sdpa_radius_aggregate.py`
+Function:
+- Aggregates the SD3 masked-SDPA sliding-window benchmark across multiple radii into two paper plots.
+
+Inputs:
+- `--results-glob`
+- `--output-dir`
+- `--xmin`, `--xmax`
+- `--error-ymin`, `--error-ymax`
+
+Outputs:
+- SD3 radius-aggregate classifier-error plot
+- SD3 radius-aggregate FID plot
+
+Exact command:
+```bash
+conda run -n arena-env python -m windowed_sampling.replot_sd3_masked_sdpa_radius_aggregate
 ```

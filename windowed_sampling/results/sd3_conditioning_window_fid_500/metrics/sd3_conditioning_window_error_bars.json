@@ -1,8 +1,8 @@
 {
-  "result_dir": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500",
-  "source_summary_csv": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/metrics/sd3_conditioning_window_summary.csv",
-  "source_metrics_json": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/metrics/sd3_conditioning_window_metrics.json",
-  "output_summary_csv": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/metrics/sd3_conditioning_window_summary_with_error_bars.csv",
+  "result_dir": "results/sd3_conditioning_window_fid_500",
+  "source_summary_csv": "results/sd3_conditioning_window_fid_500/metrics/sd3_conditioning_window_summary.csv",
+  "source_metrics_json": "results/sd3_conditioning_window_fid_500/metrics/sd3_conditioning_window_metrics.json",
+  "output_summary_csv": "results/sd3_conditioning_window_fid_500/metrics/sd3_conditioning_window_summary_with_error_bars.csv",
   "classifier_error_method": {
     "metric": "error_rate",
     "distribution": "binomial",

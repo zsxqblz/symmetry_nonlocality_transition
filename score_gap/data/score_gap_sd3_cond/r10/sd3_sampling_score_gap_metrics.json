@@ -13,7 +13,7 @@
     "seed": 123,
     "guidance_scale": 4.0,
     "prompt": "a golden retriever playing in a park, high detail, soft lighting",
-    "output_dir": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/score_gap_outputs_sd3_sampling_only_golden_retriever_masked_sdpa/r10",
+    "output_dir": "score_gap_outputs_sd3_sampling_only_golden_retriever_masked_sdpa/r10",
     "local_files_only": true,
     "local_attn_impl": "masked_sdpa"
   },

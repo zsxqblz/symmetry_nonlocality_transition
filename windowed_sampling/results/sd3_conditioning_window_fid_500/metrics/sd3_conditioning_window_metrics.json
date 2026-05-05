@@ -657,7 +657,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -666,7 +666,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -675,7 +675,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -684,7 +684,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/baseline_global_conditioned_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -5159,7 +5159,7 @@
         "pred_label": "seat belt, seatbelt",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -5168,7 +5168,7 @@
         "pred_label": "piggy bank, penny bank",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -5177,7 +5177,7 @@
         "pred_label": "comic book",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -5186,7 +5186,7 @@
         "pred_label": "castle",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_00_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -9661,7 +9661,7 @@
         "pred_label": "seat belt, seatbelt",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -9670,7 +9670,7 @@
         "pred_label": "piggy bank, penny bank",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -9679,7 +9679,7 @@
         "pred_label": "comic book",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -9688,7 +9688,7 @@
         "pred_label": "castle",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_01_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -14163,7 +14163,7 @@
         "pred_label": "seat belt, seatbelt",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -14172,7 +14172,7 @@
         "pred_label": "piggy bank, penny bank",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -14181,7 +14181,7 @@
         "pred_label": "comic book",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -14190,7 +14190,7 @@
         "pred_label": "castle",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_02_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -18665,7 +18665,7 @@
         "pred_label": "seat belt, seatbelt",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -18674,7 +18674,7 @@
         "pred_label": "mask",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -18683,7 +18683,7 @@
         "pred_label": "comic book",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -18692,7 +18692,7 @@
         "pred_label": "stupa, tope",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_03_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -23167,7 +23167,7 @@
         "pred_label": "seat belt, seatbelt",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -23176,7 +23176,7 @@
         "pred_label": "mask",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -23185,7 +23185,7 @@
         "pred_label": "comic book",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -23194,7 +23194,7 @@
         "pred_label": "castle",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_04_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -27669,7 +27669,7 @@
         "pred_label": "seat belt, seatbelt",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -27678,7 +27678,7 @@
         "pred_label": "mask",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -27687,7 +27687,7 @@
         "pred_label": "comic book",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -27696,7 +27696,7 @@
         "pred_label": "castle",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_05_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -32171,7 +32171,7 @@
         "pred_label": "microphone, mike",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -32180,7 +32180,7 @@
         "pred_label": "mask",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -32189,7 +32189,7 @@
         "pred_label": "slot, one-armed bandit",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -32198,7 +32198,7 @@
         "pred_label": "castle",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_06_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -36673,7 +36673,7 @@
         "pred_label": "hamster",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -36682,7 +36682,7 @@
         "pred_label": "mask",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -36691,7 +36691,7 @@
         "pred_label": "comic book",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -36700,7 +36700,7 @@
         "pred_label": "castle",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_07_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -41175,7 +41175,7 @@
         "pred_label": "German shepherd, German shepherd dog, German police dog, alsatian",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -41184,7 +41184,7 @@
         "pred_label": "Gordon setter",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -41193,7 +41193,7 @@
         "pred_label": "Siamese cat, Siamese",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -41202,7 +41202,7 @@
         "pred_label": "beacon, lighthouse, beacon light, pharos",
         "target_class": 207,
         "correct": 0,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_08_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,
@@ -45677,7 +45677,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_000_seed_123.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_000_seed_123.png"
       },
       {
         "sample_index": 1,
@@ -45686,7 +45686,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_001_seed_124.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_001_seed_124.png"
       },
       {
         "sample_index": 2,
@@ -45695,7 +45695,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_002_seed_125.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_002_seed_125.png"
       },
       {
         "sample_index": 3,
@@ -45704,7 +45704,7 @@
         "pred_label": "golden retriever",
         "target_class": 207,
         "correct": 1,
-        "example_path": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_003_seed_126.png"
+        "example_path": "results/sd3_conditioning_window_fid_500/examples/schedule_09_sample_003_seed_126.png"
       },
       {
         "sample_index": 4,

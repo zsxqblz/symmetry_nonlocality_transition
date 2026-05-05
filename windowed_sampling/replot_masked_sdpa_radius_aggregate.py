@@ -92,16 +92,38 @@ def extract_radius(result_dir: Path) -> int:
     return int(name[start:end])
 
 
-def load_summary(path: Path) -> list[dict[str, float]]:
-    rows: list[dict[str, float]] = []
-    with path.open(newline="") as handle:
+def load_summary(summary_path: Path, errorbar_path: Path) -> list[dict[str, float]]:
+    rows: dict[tuple[float, float], dict[str, float]] = {}
+
+    with summary_path.open(newline="") as handle:
         reader = csv.DictReader(handle)
         for row in reader:
-            rows.append(
-                {
-                    "interval_start": float(row["interval_start"]),
-                    "interval_end": float(row["interval_end"]),
-                    "interval_center": 0.5 * (float(row["interval_start"]) + float(row["interval_end"])),
+            interval_start = float(row["interval_start"])
+            interval_end = float(row["interval_end"])
+            key = (interval_start, interval_end)
+            rows[key] = {
+                "interval_start": interval_start,
+                "interval_end": interval_end,
+                "interval_center": 0.5 * (interval_start + interval_end),
+                "error_rate": float(row["error_rate"]),
+                "fid_to_global_conditioned": float(row["fid_to_global_conditioned"]),
+                "error_ci_low": float(row["error_rate"]),
+                "error_ci_high": float(row["error_rate"]),
+                "fid_ci_low": float(row["fid_to_global_conditioned"]),
+                "fid_ci_high": float(row["fid_to_global_conditioned"]),
+            }
+
+    if errorbar_path.is_file():
+        with errorbar_path.open(newline="") as handle:
+            reader = csv.DictReader(handle)
+            for row in reader:
+                interval_start = float(row["interval_start"])
+                interval_end = float(row["interval_end"])
+                key = (interval_start, interval_end)
+                rows[key] = {
+                    "interval_start": interval_start,
+                    "interval_end": interval_end,
+                    "interval_center": 0.5 * (interval_start + interval_end),
                     "error_rate": float(row["error_rate"]),
                     "fid_to_global_conditioned": float(row["fid_to_global_conditioned"]),
                     "error_ci_low": float(row["error_ci_low"]),
@@ -109,24 +131,24 @@ def load_summary(path: Path) -> list[dict[str, float]]:
                     "fid_ci_low": float(row["fid_ci_low"]),
                     "fid_ci_high": float(row["fid_ci_high"]),
                 }
-            )
-    rows.sort(key=lambda row: row["interval_center"])
-    return rows
+
+    merged_rows = list(rows.values())
+    merged_rows.sort(key=lambda row: row["interval_center"])
+    return merged_rows
 
 
-def discover_runs(results_glob: str) -> list[tuple[int, Path, list[dict[str, float]]]]:
+def discover_runs(results_glob: str, summary_name: str) -> list[tuple[int, Path, list[dict[str, float]]]]:
     result_dirs = sorted((PERTURB_DIR / "results").glob(results_glob))
     runs: list[tuple[int, Path, list[dict[str, float]]]] = []
     for result_dir in result_dirs:
-        summary_path = result_dir / "metrics" / "sliding_global_window_local_summary_with_error_bars.csv"
+        summary_path = result_dir / "metrics" / "sliding_global_window_local_summary.csv"
+        errorbar_path = result_dir / "metrics" / summary_name
         if not summary_path.is_file():
             continue
-        runs.append((extract_radius(result_dir), result_dir, load_summary(summary_path)))
+        runs.append((extract_radius(result_dir), result_dir, load_summary(summary_path, errorbar_path)))
     runs.sort(key=lambda item: item[0])
     if not runs:
-        raise FileNotFoundError(
-            f"No postprocessed summary CSVs matched results/{results_glob}"
-        )
+        raise FileNotFoundError(f"No postprocessed summary CSVs matched results/{results_glob}")
     return runs
 
 
@@ -156,18 +178,7 @@ def plot_metric(
             [high - y for y, high in zip(ys, highs)],
         ]
         color = cmap(idx + 1)
-        ax.errorbar(
-            xs,
-            ys,
-            yerr=yerr,
-            color=color,
-            marker="o",
-            linewidth=LINEWIDTH,
-            markersize=MARKERSIZE,
-            elinewidth=1.0,
-            capsize=2.5,
-            label=f"r={radius}",
-        )
+        ax.errorbar(xs, ys, yerr=yerr, color=color, marker="o", linewidth=LINEWIDTH, markersize=MARKERSIZE, elinewidth=1.0, capsize=2.5, label=f"r={radius}")
 
     xticks = sorted({round(row["interval_center"], 4) for _radius, _result_dir, rows in runs for row in rows})
     ax.set_xticks(xticks)
@@ -184,35 +195,28 @@ def plot_metric(
     plt.close(fig)
 
 
+def render(results_glob: str, summary_name: str, output_dir: Path, error_name: str, fid_name: str) -> None:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    runs = discover_runs(results_glob, summary_name)
+    plot_metric(runs, y_key="error_rate", ci_low_key="error_ci_low", ci_high_key="error_ci_high", y_label="classifier error", output_path=output_dir / error_name, xmin=0.2, xmax=0.8, ymin=0.0, ymax=1.0)
+    plot_metric(runs, y_key="fid_to_global_conditioned", ci_low_key="fid_ci_low", ci_high_key="fid_ci_high", y_label="FID to baseline", output_path=output_dir / fid_name, xmin=0.2, xmax=0.8)
+
+
 def main() -> None:
-    args = parse_args()
-    args.output_dir.mkdir(parents=True, exist_ok=True)
-    runs = discover_runs(args.results_glob)
-
-    plot_metric(
-        runs,
-        y_key="error_rate",
-        ci_low_key="error_ci_low",
-        ci_high_key="error_ci_high",
-        y_label="classifier error",
-        output_path=args.output_dir / "dit_masked_sdpa_radius_aggregate_classifier_error_vs_t_i.png",
-        xmin=args.xmin,
-        xmax=args.xmax,
-        ymin=args.error_ymin,
-        ymax=args.error_ymax,
-    )
-    plot_metric(
-        runs,
-        y_key="fid_to_global_conditioned",
-        ci_low_key="fid_ci_low",
-        ci_high_key="fid_ci_high",
-        y_label="FID to baseline",
-        output_path=args.output_dir / "dit_masked_sdpa_radius_aggregate_fid_vs_t_i.png",
-        xmin=args.xmin,
-        xmax=args.xmax,
-    )
-
-    print(f"Saved aggregate plots to {args.output_dir}")
+    parser = argparse.ArgumentParser(description="Aggregate masked-SDPA sliding-window radius sweep plots.")
+    parser.add_argument("--results-glob", default=DEFAULT_RESULTS_GLOB, help="Glob under results/ selecting radius directories.")
+    parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR, help="Directory to save the aggregate plots.")
+    parser.add_argument("--xmin", type=float, default=0.2, help="Minimum x-axis value.")
+    parser.add_argument("--xmax", type=float, default=0.8, help="Maximum x-axis value.")
+    parser.add_argument("--error-ymin", type=float, default=0.0, help="Minimum classifier-error y-axis value.")
+    parser.add_argument("--error-ymax", type=float, default=1.0, help="Maximum classifier-error y-axis value.")
+    args = parser.parse_args()
+    output_dir = args.output_dir
+    output_dir.mkdir(parents=True, exist_ok=True)
+    runs = discover_runs(args.results_glob, "sliding_global_window_local_summary_with_error_bars.csv")
+    plot_metric(runs, y_key="error_rate", ci_low_key="error_ci_low", ci_high_key="error_ci_high", y_label="classifier error", output_path=output_dir / "dit_masked_sdpa_radius_aggregate_classifier_error_vs_t_i.png", xmin=args.xmin, xmax=args.xmax, ymin=args.error_ymin, ymax=args.error_ymax)
+    plot_metric(runs, y_key="fid_to_global_conditioned", ci_low_key="fid_ci_low", ci_high_key="fid_ci_high", y_label="FID to baseline", output_path=output_dir / "dit_masked_sdpa_radius_aggregate_fid_vs_t_i.png", xmin=args.xmin, xmax=args.xmax)
+    print(f"Saved aggregate plots to {output_dir}")
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 {
-  "result_dir": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500",
-  "source_summary_csv": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500/metrics/sliding_global_window_local_summary.csv",
-  "source_metrics_json": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500/metrics/sliding_global_window_local_metrics.json",
-  "output_summary_csv": "/scratch/gpfs/SARANGG/yz4281/local_vit/local_attention/local_perturbation/results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500/metrics/sliding_global_window_local_summary_with_error_bars.csv",
+  "result_dir": "results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500",
+  "source_summary_csv": "results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500/metrics/sliding_global_window_local_summary.csv",
+  "source_metrics_json": "results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500/metrics/sliding_global_window_local_metrics.json",
+  "output_summary_csv": "results/dit_sliding_global_window_local_masked_sdpa_r8_L0p4_unconditional_n500/metrics/sliding_global_window_local_summary_with_error_bars.csv",
   "classifier_error_method": {
     "metric": "error_rate",
     "distribution": "binomial",
