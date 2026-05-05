@@ -1,4 +1,4 @@
-root=score_gap/data/score_gap_sd3_uncond
+root=/scratch/gpfs/SARANGG/yz4281/local_vit/public_repo/score_gap/data/score_gap_sd3_uncond
 metrics_name=sd3_sampling_score_gap_metrics.json
 available_radii=2,4,6,8,10,12,14,16
 r1_to_r8_step1:available=2,4,6,8

@@ -1,4 +1,4 @@
-root=score_gap/data/score_gap_sd3_cond
+root=/scratch/gpfs/SARANGG/yz4281/local_vit/public_repo/score_gap/data/score_gap_sd3_cond
 available_radii=1,2,3,4,5,6,7,8,10,12,14,16
 r1_to_r8_step1:plain:no error band
 r1_to_r8_step1:trajstd:trajectory std
