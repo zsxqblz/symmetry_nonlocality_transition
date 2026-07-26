@@ -1,0 +1,24 @@
+Schedule-weighted (instantaneous drift per unit log-SNR) replot of Figure 3.
+
+Weighted quantity: (sigma_t^2 / 2) * ||Delta s||, the perturbation of the
+probability-flow ODE drift per unit lambda = log SNR.
+
+Applied to stored gaps:
+  DiT   (eps-pred MAE): multiply by sqrt(1 - alphabar_t) / 2,
+        alphabar from linear betas 0.0001 -> 0.02 over 1000 steps (facebook/DiT-XL-2-256 config).
+  SD3   (velocity MSE): amplitude sqrt(MSE) taken per row, then multiplied
+        by t (1 - t) / 2 with t = raw_timestep / 1000 (shift already in grid).
+
+x-axis: time t normalized to [0, 1] (DiT: timestep/1000; SD3: flow time),
+ascending 0 -> 1 in every panel (sampling proceeds right -> left).
+
+Caveats: DiT gaps are per-pixel MAE while SD3 gaps are RMS, so cross-model
+comparisons are up to a norm convention; the SD3 conditional prediction
+includes CFG at the guidance scale recorded in the run config.
+
+dit_sampling_root=/Users/hufangjun/Documents/GitHub/symmetry_nonlocality_transition/score_gap/data/score_gap_facebook_cond
+dit_train_root=/Users/hufangjun/Documents/GitHub/symmetry_nonlocality_transition/score_gap/data/score_gap_facebook_train
+sd3_root=/Users/hufangjun/Documents/GitHub/symmetry_nonlocality_transition/score_gap/data/score_gap_sd3_cond
+panel 'DiT-XL sampling trajectory': radii=[1, 2, 3, 4, 5, 6, 7, 8], n_t=100, t_range=[0.010, 0.999], invert_x=False
+panel 'DiT-XL training trajectory': radii=[1, 2, 3, 4, 5, 6, 7, 8], n_t=100, t_range=[0.010, 0.999], invert_x=False
+panel 'SD3 medium sampling trajectory': radii=[1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16], n_t=100, t_range=[0.009, 1.000], invert_x=False
